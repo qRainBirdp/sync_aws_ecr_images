@@ -14,12 +14,12 @@ docker的安装大同小异，保证docker能用即可
 ## 安装AWS CLI
 这里参考https://docs.aws.amazon.com/zh_cn/cli/latest/userguide/install-cliv2-linux.html
 ## AWS账号配置
-sync脚本的开始有账户信息的配置，如下，按照实际的账户配置即可，不配置无法运行
+sync脚本的开始有账户信息的配置，如下，按照实际的账户配置即可，不配置无法运行，MAIN是源仓库，TARGET是需要同步镜像的仓库
 ```python
-CN = {"region": "cn-north-2",
+TARGET = {"region": "cn-north-2",
       "access_key_id": "string",
       "secret_access_key": "string"}
-NET = {"region": "us-west-2",
+MAIN = {"region": "us-west-2",
        "access_key_id": "string",
        "secret_access_key": "string"}
 ```
